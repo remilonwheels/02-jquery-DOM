@@ -27,7 +27,7 @@ Article.prototype.toHtml = function() {
   $newArticle.find('h1').text(this.title);
   $newArticle.find('a').text(this.author);
   $newArticle.find('a').attr('href', this.authorUrl);
-  $newArticle.find('.article-body').text(this.body);
+  $newArticle.find('.article-body').html(this.body);
 
 
   $newArticle.find('time[pubdate]').attr('title', this.publishedOn);
