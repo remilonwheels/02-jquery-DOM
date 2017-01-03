@@ -40,6 +40,6 @@ blogArticles.forEach(function(ele) {
   articles.push(new Article(ele));
 });
 
-articles.forEach(function(article) {
-  $('#articles').append(article.toHtml());
-});
+// articles.forEach(function(article) {
+//   $('#articles').append(article.toHtml());
+// });
